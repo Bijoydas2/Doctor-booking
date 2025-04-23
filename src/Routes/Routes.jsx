@@ -16,7 +16,7 @@ import DoctorDetails from "../Pages/DoctorDetails";
             {
                 index:true,
                 Component:Home,
-                loader: ()=> fetch('./doctors.json')
+                loader: ()=> fetch('../doctors.json')
             },
             
             {
@@ -32,8 +32,9 @@ import DoctorDetails from "../Pages/DoctorDetails";
                 Component:Contact
             },
             {
-                path:'/details',
-                Component:DoctorDetails
+                path:'/details/:id',
+                Component:DoctorDetails,
+                loader: ()=> fetch('../doctors.json')
             },
 
         ]

@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import DoctorCard from './DoctorCard';
 import Button from './Ui/Button';
 
 const DoctorsContainer = ({doctors}) => {
+    const [displayDoctors, setDisplayDoctors]=useState([]);
+    const [showAll,setShowAll]=useState(false)
+
+   useEffect(()=>{
+   if (showAll){
+    setDisplayDoctors(doctors)
+   }
+   else{
+    setDisplayDoctors(doctors.slice(0,6))
+   }
+   },[doctors,showAll])
     return (
         <div className='py-20 mx-auto w-11/12'>
             <div className='text-center my-4'>
@@ -12,7 +23,7 @@ const DoctorsContainer = ({doctors}) => {
             </div>
           <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 '>
           {
-            doctors.map(doctor=> 
+            displayDoctors.map(doctor=> 
                 <DoctorCard key={doctor.id} doctor={doctor}></DoctorCard>)
           }
            
@@ -20,7 +31,9 @@ const DoctorsContainer = ({doctors}) => {
 
   
           <div className='text-center'>
-         <Button label='View All Doctor'></Button>
+         <Button onClick={()=>{ setShowAll(p=> !p)
+            if (showAll) window.scroll(0,1000)
+         }} label={showAll? 'View Less': 'View All Doctors'}></Button>
           </div>
         </div>
     );

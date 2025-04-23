@@ -3,7 +3,7 @@ import { FaRegRegistered } from "react-icons/fa";
 import { Link } from 'react-router';
 
 const DoctorCard = ({doctor}) => {
-    const {name,image,education,registrationNumber} =doctor;
+    const {id,name,image,education,registrationNumber} =doctor;
     return (
         <div className="card bg-base-100  shadow-sm p-6">
   <figure>
@@ -26,7 +26,7 @@ const DoctorCard = ({doctor}) => {
     <p> Reg No:{registrationNumber}</p>
     </div>
     <div className="card-actions ">
-   <Link> <button className="btn btn-outline btn-info w-full rounded-4xl">View Details</button></Link>
+   <Link to={`/details/${id}`}> <button className="btn btn-outline btn-info w-full rounded-4xl">View Details</button></Link>
     </div>
   </div>
 </div>
