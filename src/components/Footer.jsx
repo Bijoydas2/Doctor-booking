@@ -8,7 +8,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="footer footer-horizontal footer-center bg-white text-base-content rounded p-10">
+        <footer className="footer footer-horizontal bg-slate-100 shadow-2xl footer-center bg-white text-base-content rounded p-10">
         <div className='flex items-center gap-2'>
           <img src={Logo} className='w-10' alt="" />
          <Link to='/' className="font-bold text-2xl">Phudu</Link>

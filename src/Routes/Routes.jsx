@@ -5,6 +5,7 @@ import Home from "../Pages/Home";
 import Booking from "../Pages/Booking";
 import Blogs from "../Pages/Blogs";
 import Contact from "../Pages/Contact";
+import DoctorDetails from "../Pages/DoctorDetails";
 
  const router=createBrowserRouter([
     {
@@ -14,7 +15,8 @@ import Contact from "../Pages/Contact";
         children:[
             {
                 index:true,
-                Component:Home
+                Component:Home,
+                loader: ()=> fetch('./doctors.json')
             },
             
             {
@@ -28,6 +30,10 @@ import Contact from "../Pages/Contact";
             {
                 path:'/contact',
                 Component:Contact
+            },
+            {
+                path:'/details',
+                Component:DoctorDetails
             },
 
         ]

@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/2YLhw5G2/img1-2.jpg",
+      "name": "Dr. Arif Hossain",
+      "education": "MBBS, FCPS (Medicine)",
+      "speciality": "Internal Medicine",
+      "experience": "10 years",
+      "registrationNumber": "BMDC-102934"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/gMtr9yg1/img1.png",
+      "name": "Dr. Nusrat Jahan",
+      "education": "MBBS, MS (Gynae)",
+      "speciality": "Gynecology & Obstetrics",
+      "experience": "8 years",
+      "registrationNumber": "BMDC-109821"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/kV85gTT8/img-2.jpg",
+      "name": "Dr. Saif Rahman",
+      "education": "MBBS, MD (Cardiology)",
+      "speciality": "Cardiology",
+      "experience": "12 years",
+      "registrationNumber": "BMDC-103456"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co.com/dsJwjXfz/img2-2.jpg",
+      "name": "Dr. Tanjila Ahmed",
+      "education": "MBBS, FCPS (Dermatology)",
+      "speciality": "Dermatology",
+      "experience": "6 years",
+      "registrationNumber": "BMDC-106778"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co.com/PzP3JBr9/img3-2.jpg",
+      "name": "Dr. Mizanur Rahman",
+      "education": "MBBS, MS (Orthopedics)",
+      "speciality": "Orthopedic Surgery",
+      "experience": "15 years",
+      "registrationNumber": "BMDC-101145"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co.com/DHnKdPrw/img3-3.jpg",
+      "name": "Dr. Farzana Islam",
+      "education": "MBBS, MD (Pediatrics)",
+      "speciality": "Pediatrics",
+      "experience": "9 years",
+      "registrationNumber": "BMDC-107321"
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co.com/0RM4PKmc/img4-2.jpg",
+      "name": "Dr. Khalid Hasan",
+      "education": "MBBS, MD (Neurology)",
+      "speciality": "Neurology",
+      "experience": "11 years",
+      "registrationNumber": "BMDC-102876"
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co.com/JRGjvvkJ/img4-3.jpg",
+      "name": "Dr. Lamiya Akter",
+      "education": "MBBS, MS (ENT)",
+      "speciality": "ENT Specialist",
+      "experience": "7 years",
+      "registrationNumber": "BMDC-108934"
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co.com/fVcZGQKP/img5-2.jpg",
+      "name": "Dr. Rifat Mahmud",
+      "education": "MBBS, MD (Nephrology)",
+      "speciality": "Nephrology",
+      "experience": "13 years",
+      "registrationNumber": "BMDC-100982"
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co.com/tptLKhHk/img5-3.jpg",
+      "name": "Dr. Sumaiya Binte Karim",
+      "education": "MBBS, FCPS (Ophthalmology)",
+      "speciality": "Eye Specialist",
+      "experience": "10 years",
+      "registrationNumber": "BMDC-105632"
+    },
+    {
+      "id": 11,
+      "image": "https://i.ibb.co.com/KzLNKZbT/img6.png",
+      "name": "Dr. Shahin Alam",
+      "education": "MBBS, MS (Urology)",
+      "speciality": "Urologist",
+      "experience": "9 years",
+      "registrationNumber": "BMDC-101987"
+    },
+    {
+      "id": 12,
+      "image": "https://i.ibb.co.com/wNQT2NPy/img6-2.png",
+      "name": "Dr. Jannat Nahar",
+      "education": "MBBS, FCPS (Psychiatry)",
+      "speciality": "Psychiatrist",
+      "experience": "6 years",
+      "registrationNumber": "BMDC-104589"
+    }
+  ]
+  
