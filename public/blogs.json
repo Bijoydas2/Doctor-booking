@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "question": " What is useState and how does it work in React?",
+      "answer": "useState is a React hook that allows you to create state variables in functional components. It returns a pair: the current state value and a function to update it. When the state is updated, the component re-renders with the new value.",
+      "date": "2025-04-24"
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of useEffect in React?",
+      "answer": "useEffect is a React hook used to perform side effects in components, such as fetching data, directly updating the DOM, or setting up subscriptions. It runs after the component renders, and you can control when it runs by providing a dependency array.",
+      "date": "2025-04-24"
+    },
+    {
+      "id": 3,
+      "question": "What is a custom hook in React and when should you use one?",
+      "answer": "A custom hook is a reusable function that uses other React hooks (like useState or useEffect) to share logic across components. You should use custom hooks when you need to reuse complex logic in multiple components without repeating code.",
+      "date": "2025-04-24"
+    },
+    {
+      "id": 4,
+      "question": "Difference between controlled and uncontrolled components? Which one is better?",
+      "answer": "Controlled components have their form data managed by React state using useState. Uncontrolled components use DOM directly with refs. Controlled components are generally preferred in React because they offer better control and predictability.",
+      "date": "2025-04-24"
+    },
+    {
+      "id": 5,
+      "question": "Tell us something about useFormStatus()",
+      "answer": "useFormStatus is a React hook (mainly from React Server Components or frameworks like Next.js) that helps track the status of a form submission, such as 'pending', 'success', or 'error'. It is useful to provide UI feedback like loading spinners or error messages during async form handling.",
+      "date": "2025-04-24"
+    }
+  ]
+  

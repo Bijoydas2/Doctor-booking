@@ -1,13 +1,33 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { Link, useLoaderData, useParams } from 'react-router';
 import { FaRegRegistered } from "react-icons/fa";
 import { PiWarningCircleDuotone } from "react-icons/pi";
 import { addAppoinment } from '../Utils/Utils';
+import Button from '../components/Ui/Button';
 
 const DoctorDetails = () => {
     const  data = useLoaderData();
     const {id} = useParams();
     const singleDoctor = data.find(doctor=> doctor.id === parseInt(id))
+
+    if (!singleDoctor) {
+        return (
+            <div >
+            <Navbar/>
+    
+    <div className='py-24 text-center'>
+            <h1 className='mb-3 text-3xl lg:text-6xl font-bold'>No Doctor Found</h1>
+            <p className='mb-8 text-xl  text-gray-500 md:text-2xl'>
+              No Doctor Found with this registration No-
+            </p>
+            <p>{id}</p>
+            <Link to='/'>
+              <Button label='View All Doctor' />
+            </Link>
+          </div>
+          </div>
+        );
+    }
     const {
         name,
         education,
