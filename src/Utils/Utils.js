@@ -10,9 +10,9 @@ export const getAppoinment=()=>{
 export const addAppoinment = doctor=>{
     const appoinment =getAppoinment();
     const isExist = appoinment.find(p=> p.id === doctor.id)
-    if(isExist) return toast.warn("Already Added")
+    if(isExist) return toast.warn("Appointment Already scheduled for today")
      appoinment.push(doctor)
-     toast("Wow so easy!")
+     toast(`Appointment scheduled for ${doctor.name} successfully`)
         
     localStorage.setItem('doctor',JSON.stringify(appoinment))
 }

@@ -10,7 +10,7 @@ import {
   Cell,
 } from 'recharts';
 
-// 🔷 Custom pyramid-style bar shape
+
 const CustomBar = ({ x, y, width, height, fill }) => {
   const path = `
     M${x},${y + height}
@@ -21,7 +21,7 @@ const CustomBar = ({ x, y, width, height, fill }) => {
   return <path d={path} fill={fill} />;
 };
 
-// 🎨 Some example distinct colors
+
 const colors = ['#FF6B6B', '#6BCB77', '#4D96FF', '#FFD93D', '#845EC2', '#00C9A7', '#F95738', '#0081CF', '#F9A826', '#9B59B6'];
 
 const Recharts = ({ doctors }) => {

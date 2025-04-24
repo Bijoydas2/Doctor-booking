@@ -6,12 +6,13 @@ import Booking from "../Pages/Booking";
 import Blogs from "../Pages/Blogs";
 import Contact from "../Pages/Contact";
 import DoctorDetails from "../Pages/DoctorDetails";
+import Error from "../Pages/Error";
 
  const router=createBrowserRouter([
     {
         path: "/",
         Component:MainLayout,
-        errorElement:<p>error</p>,
+  
         children:[
             {
                 index:true,
@@ -34,6 +35,7 @@ import DoctorDetails from "../Pages/DoctorDetails";
             {
                 path:'/details/:id',
                 Component:DoctorDetails,
+                ErrorBoundary:Error,
                 loader: ()=> fetch('../doctors.json')
             },
 
