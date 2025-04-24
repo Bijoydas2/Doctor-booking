@@ -1,7 +1,8 @@
 import React from 'react';
+import { removeAppoinment } from '../Utils/Utils';
 
-const Appoinment = ({doctor}) => {
-    const {name,education,consultationFee}=doctor
+const Appoinment = ({doctor,handleRemove}) => {
+    const {name,education,consultationFee,id}=doctor
     return (
         <div>
           
@@ -21,7 +22,7 @@ const Appoinment = ({doctor}) => {
                          
                          
             
-                          <button   className='btn text-red-600 border-red-400 rounded-4xl w-full my-4 font-bold'>Cancel Appointment </button>
+                          <button onClick={()=>handleRemove(id)}  className='btn text-red-600 border-red-400 rounded-4xl w-full my-4 font-bold'>Cancel Appointment </button>
                         </div>
         </div>
     );
