@@ -4,7 +4,7 @@ A full-featured doctor appointment booking system built with MERN Stack, allowin
 
 ## 🌐 Live Demo
 
-🔗 [Live Website](doctor-details-2325.netlify.app)  
+🔗 [Live Website](https://doctor-details-2325.netlify.app/)  
 
 
 
